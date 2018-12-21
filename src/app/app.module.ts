@@ -14,6 +14,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatListModule} from '@angular/material/list';
 import { StudentNotesComponent } from './student-notes/student-notes.component';
+import {MatCardModule} from '@angular/material/card';
 
 ///////
 @NgModule({
@@ -31,7 +32,8 @@ import { StudentNotesComponent } from './student-notes/student-notes.component';
       InMemoryDataService, { dataEncapsulation: false }
     ),
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
