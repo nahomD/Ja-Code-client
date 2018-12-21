@@ -1,0 +1,23 @@
+<!-- <div>
+  <p>Student name: {{student.name}}</p>
+  <p>Student bio: {{student.bio}}</p>
+  <p>Student id: {{student.id}}</p>
+</div> -->
+
+<div>
+  <!-- <input [(ngModel)]="hero.name" placeholder="name"> -->
+</div>
+
+<!-- <div>
+  <h2>Students</h2>
+  <ul *ngIf="students.length">
+    <li *ngFor="let student of students">
+      <span>{{student.name}}</span>
+    </li>
+  </ul>
+</div> -->
+<div *ngIf="students.length">
+  <mat-list *ngFor="let student of students" (click)="onSelect(student)">
+    <mat-list-item>{{student.name}}</mat-list-item>
+  </mat-list>
+</div>
