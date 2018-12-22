@@ -10,9 +10,11 @@ export class InMemoryDataService implements InMemoryDbService{
 
   createDb() {
     const students = [
-      {id:1, name:'nah', bio:'biod'},
+      {id:1, name:'nah', bio:'biod', notes:[{id:1, title:"test", body:"body"},{
+        id:2, title:"test06", body:"body09"
+      }]},
       {id:2, name:'naho', bio:'biod'},
-      {id:1, name:'nah', bio:'biod'}      
+      {id:3, name:'nah', bio:'biod'}      
     ];
     return {students};
   }

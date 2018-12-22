@@ -1,14 +1,10 @@
-<mat-card>
-  <mat-card-title>Note 1</mat-card-title>
-  <mat-card-content>Hello car</mat-card-content>
-</mat-card>
-
-<mat-card>
-    <mat-card-title>Note 2</mat-card-title>
-    <mat-card-content>Hello Motor</mat-card-content>
-</mat-card>
-
-<mat-card>
-      <mat-card-title>Note 3</mat-card-title>
-      <mat-card-content>Hello House</mat-card-content>
-</mat-card>
+<div *ngIf="notes.length">
+  <!-- <mat-card *ngFor="let note in notes">
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>{{note.body}}</mat-card-content>
+  </mat-card> -->
+  <mat-card *ngFor="let note of notes">
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>{{note.body}}</mat-card-content>
+  </mat-card>
+</div>
