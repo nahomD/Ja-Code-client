@@ -13,7 +13,8 @@ export class StudentsComponent implements OnInit {
   student:Student = {
     id:1,
     name:"name",
-    bio:"bio"
+    bio:"bio",
+    notes:[]
   };
 
   students:Student[] = [];
@@ -34,5 +35,5 @@ export class StudentsComponent implements OnInit {
   onSelect(student: Student): void {
     this.selectedStudent = student;
   }
-  
+
 }

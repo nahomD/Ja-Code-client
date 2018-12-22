@@ -17,7 +17,7 @@
   </ul>
 </div> -->
 <div *ngIf="students.length">
-  <mat-list *ngFor="let student of students" (click)="onSelect(student)">
-    <mat-list-item>{{student.name}}</mat-list-item>
-  </mat-list>
+  <mat-nav-list *ngFor="let student of students" (click)="onSelect(student)">
+    <a mat-list-item routerLink="/student-notes/{{student.id}}">{{student.name}}</a>
+  </mat-nav-list>
 </div>
